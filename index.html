@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Alumno{
+            constructor(nombre,numeroDeMatricula,poblacion){
+                this.nombre = nombre,
+                this.numeroDeMatricula = numeroDeMatricula,
+                this.poblacion =poblacion
+            }
+            saludar(){
+                alert("Me llamo " + this.nombre)
+            }
+        }
+        let maria = new Alumno("Maria",23456,"Tomelloso")
+        let pepe =new Alumno("Pepe",23457,"Tomelloso")
+        maria.saludar()
+        pepe.saludar
+        let alumno1 = {
+            nombre: "Pepe",
+            saludar: function(){
+                alert("Hola me llamo" +this.nombre)
+            },
+            numeroDeMatricula: 23444,
+            direccion:{
+                calle:"Norte",
+                numero:"11B",
+                cp:"13600",
+                poblacion:"Alcazar de San Juan",
+
+            }
+        }
+        let alumno2 = {
+            nombre: "Maria",
+            saludar: function(){
+                alert("Hola me llamo" +this.nombre)
+            },
+            numeroDeMatricula:23445,
+            poblacion:"Villafranca"
+        }
+        console.log(alumno1.direccion.poblacion)
+        alumno1.saludar()
+        alumno2.saludar()
+    </script>
+</body>
+</html>
